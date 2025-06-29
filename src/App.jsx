@@ -83,7 +83,7 @@ function App() {
       </div>
     </div>
 
-    <div className='flex justify-center '>
+    <div className='flex justify-center pb-10'>
            <button 
              onClick={download}
              disabled={isDownloading}
