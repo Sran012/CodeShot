@@ -41,7 +41,8 @@ function App() {
     }
 
   return (
-    <div className='bg-gray-200 h-screen'>
+    // <div className='bg-gray-200 '>
+    <div className="min-h-screen w-full bg-gradient-to-br from-[rgba(102,126,234,0.4)] via-[rgba(118,75,162,0.4)] to-[rgba(79,172,254,0.4)]">
 
     <div className="md:flex p-10 gap-4 ">
       
