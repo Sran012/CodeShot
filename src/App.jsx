@@ -26,8 +26,7 @@ function App() {
         try {
         const dataUrl = await domtoimage.toPng(previewRef.current, {scale:2, backgroundColor: 'linear-gradient(135deg, rgba(102, 126, 234, 0.6) 0%, rgba(118, 75, 162, 0.6) 25%, rgba(240, 147, 251, 0.6) 50%, rgba(245, 87, 108, 0.6) 75%, rgba(79, 172, 254, 0.6) 100%)',
           style: {
-            transform: 'scale(1)',
-            transformOrigin: 'top left',
+                   
           },});
         const link = document.createElement('a');
         link.href = dataUrl;
@@ -43,6 +42,8 @@ function App() {
   return (
     // <div className='bg-gray-200 '>
     <div className="min-h-screen w-full bg-gradient-to-br from-[rgba(102,126,234,0.4)] via-[rgba(118,75,162,0.4)] to-[rgba(79,172,254,0.4)]">
+
+      <h1 className='text-center md:text-5xl text-3xl font-ps text-white pt-6 text-shadow-lg hover:text-slate-700'>icodeshot</h1>
 
     <div className="md:flex p-10 gap-4 ">
       
@@ -67,18 +68,16 @@ function App() {
       >
 
 
-{/* bg-[rgba(255,255,255,0.15)] */}
-        <div 
-          className='glass-content bg-black/30 backdrop-blur-lg rounded-2xl w-full border border-white/20 shadow-inner min-h-full'
-        >
-        <pre className="whitespace-pre-wrap break-words text-sm overflow-visible shadow-none p-0 m-0">
-          <code
-            ref={codeRef}
-            className="language-javascript"
-          >
-            {code}
-          </code>
-        </pre>
+            {/* bg-[rgba(255,255,255,0.15)] */}
+        <div className='glass-content bg-black/30 backdrop-blur-lg rounded-2xl w-full border border-white/20 shadow-inner min-h-full'>
+          <pre className="whitespace-pre-wrap break-words text-sm overflow-visible shadow-none p-0 m-0">
+            <code
+              ref={codeRef}
+              className="language-javascript"
+            >
+              {code}
+            </code>
+          </pre>
         </div>
       </div>
     </div>
@@ -87,13 +86,13 @@ function App() {
            <button 
              onClick={download}
              disabled={isDownloading}
-             className='rounded-2xl p-3 px-6 text-white transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2'
+             className='rounded-2xl p-2 px-6 text-white transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2 shadow-lg'
              style={{
-               border: '2px solid transparent',
+               border: '3px solid transparent',
                background: 'linear-gradient(135deg, rgba(102, 126, 234, 0.4) 0%, rgba(118, 75, 162, 0.4) 100%) padding-box, linear-gradient(135deg, rgba(102, 126, 234, 0.3) 0%, rgba(118, 75, 162, 0.3) 100%) border-box'
              }}
            >
-                 Download Screenshot
+                 <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="30px" fill="#e3e3e3"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg>
            </button>
         </div>
 
