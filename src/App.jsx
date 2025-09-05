@@ -95,10 +95,26 @@ function App() {
                  <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="30px" fill="#e3e3e3"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg>
            </button>
         </div>
-
+        <Madeby />
     </div>
   )
 }
+
+export function Madeby() {
+  return (
+      <div>
+          <div className="fixed bottom-6 left-6 bg-slate-700 rounded-2xl px-4 py-2 z-50">
+           <a href="https://x.com/twtSujaL" className="text-white"><p className="text-center text-gray-300 flex">Made with ❤️ by <p className='text-white pl-1'> Sujal</p> </p></a>
+            
+          </div>
+
+          <div className="fixed bottom-6 right-6 bg-gray-600 rounded-2xl px-4 py-2 z-50">
+              <p className=""><a href="https://github.com/Sran012/Probex" className="text-white">⭐ Star it</a></p>
+          </div>
+      </div>
+  )
+}
+
 
 export default App
 
