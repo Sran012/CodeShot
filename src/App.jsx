@@ -109,7 +109,7 @@ export function Madeby() {
           </div>
 
           <div className="fixed bottom-6 right-6 bg-gray-600 rounded-2xl px-4 py-2 z-50">
-              <p className=""><a href="https://github.com/Sran012/Probex" className="text-white">⭐ Star it</a></p>
+              <p className=""><a href="https://github.com/Sran012/CodeShot" className="text-white">⭐ Star it</a></p>
           </div>
       </div>
   )
